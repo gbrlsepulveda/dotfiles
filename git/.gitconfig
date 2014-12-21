@@ -1,0 +1,53 @@
+[user]
+    name = Gabriel Sepulveda
+    email = gabrielsepulveda07@gmail.com
+[core]
+    excludesfile = /Users/gbrlsepulveda/.gitignore_global
+[color]
+    diff = auto
+    grep = auto
+    interactive = auto
+    status = auto
+    branch = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[alias]
+    clean-tags=for-each-ref --format="%(refname:short)" refs/tags/* | xargs git tag -d && git fetch --tags
+    ad = add --all
+    st = status -sb
+    ci = commit -m
+    br = branch
+    df = diff
+    dfs = diff --stat
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    ck = checkout
+    fu = fetch upstream
+    tree = log --graph --pretty=oneline --decorate
+    plm = pull origin master
+    psm = push origin master
+    ps = push
+    pst = push --tags
+    pl = pull
+    plr = pull --rebase
+    pp = !"echo 'Pull'; git pull; echo 'Push'; git push"
+    amend = commit --amend -C HEAD
+    ll   = log --pretty=oneline --decorate --abbrev-commit --max-count=15
+    lll  = git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    rn = log -M
+    short = shortlog -s -n
+    # Displays active users in the repository in the past 6 months
+    active = shortlog --numbered --summary --email --no-merges --since="6 months"
+[push]
+    default = simple

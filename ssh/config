@@ -1,0 +1,5 @@
+#gbrlsepulveda account
+Host github.com-gbrlsepulveda
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_github
