@@ -46,10 +46,33 @@ if [ -f ".bash_profile" ]; then
     msg_alert "For use on this session, type: source ~/.bash_profile"
 fi
 
+# .profile
+if [ -f ".zshrc" ]; then
+    msg_installing ".zshrc"
+    sudo ln -s /Users/gbrlsepulveda/Labs/dotfiles/.zshrc ~/.zshrc
+    source ~/.zshrc
+    msg_alert "For use on this session, type: source ~/.zshrc"
+fi
+
 # .inputrc
 if [ -f ".inputrc" ]; then
     msg_installing ".inputrc"
     sudo ln -s /Users/gbrlsepulveda/Labs/dotfiles/common/.inputrc ~/.inputrc
+fi
+
+# .vimrc
+if [ -f ".vimrc" ]; then
+    msg_installing ".vimrc"
+    # sudo ln -s /Users/gbrlsepulveda/Labs/dotfiles/vim/.vimrc ~/.vimrc
+    git clone git://github.com/amix/vimrc.git ~/.vim_runtime
+    sh ~/.vim_runtime/install_awesome_vimrc.sh
+fi
+
+# dracula theme
+if [ -f "dracula-theme" ]; then
+    msg_installing "dracula-theme"
+    # sudo ln -s /Users/gbrlsepulveda/Labs/dotfiles/vim/.vimrc ~/.vimrc
+    git clone git://github.com/zenorocha/dracula-theme.git /Users/gbrlsepulveda/Labs/dotfiles/common/dracula
 fi
 
 # this file prevents the shell login message

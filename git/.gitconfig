@@ -2,7 +2,7 @@
     name = Gabriel Sepulveda
     email = gabrielsepulveda07@gmail.com
 [core]
-    excludesfile = /Users/gbrlsepulveda/.gitignore_global
+	excludesfile = /Users/gbrlsepulveda/.gitignore_global
 [color]
     diff = auto
     grep = auto

@@ -8,9 +8,9 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 # ZSH_THEME=random
 # ZSH_THEME=powerline
-# ZSH_THEME=robbyrussell
+ZSH_THEME=robbyrussell
 # ZSH_THEME=ys
-ZSH_THEME=agnoster
+# ZSH_THEME=agnoster
 
 # Powerline —————————
 export TERM="xterm-256color"
@@ -75,92 +75,4 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# Apache ant
-export PATH="/Users/gabrielsepulveda/Documents/Development/Cordova/apache-ant-1.9.4/bin":$PATH
-
-# SDK Platform tools
-export PATH="/Users/gabrielsepulveda/Documents/Development/Cordova/adt-bundle-mac-x86_64-20140702/sdk/platform-tools":$PATH
-
-# SDK Toolds
-export PATH="/Users/gabrielsepulveda/Documents/Development/Cordova/adt-bundle-mac-x86_64-20140702/sdk/tools":$PATH
-
-# BlackBerry SDK
-# export PATH="/Users/gabrielsepulveda/Documents/Development/Cordova/blackberry-sdk/host_10_3_0_2702/darwin/x86/usr/bin":$PATH
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# general
-alias trash='rm -rf ~/.Trash'
-alias cl='clear'
-alias ..='cd ..'
-alias celar='clear'
-alias tree='ls -R | grep ":$" | sed -e "s/:$//" -e "s/[^-][^\/]*\//--/g" -e "s/^/   /" -e "s/-/|/"'
-alias rmds='rm -f .DS_Store .localized;ls -laG'
-
-# finder
-alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
-alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-
-# dropbox
-# alias dotfiles='cd ~/Dropbox/labs/dotfiles'
-# alias dropbox='cd ~/Dropbox'
-# alias jobs='cd ~/Dropbox/jobs'
-# alias labs='cd ~/Dropbox/labs'
-alias drive='cd ~/Google Drive'
-alias talks='cd ~/Google Drive/Talks'
-
-# others dirs
-alias home='cd ~/'
-alias projetos='cd ~/Documents/Development/Projects'
-alias mamp='cd /Applications/MAMP/htdocs/'
-alias faculdade='cd ~/Documents/Development/Projects/Faculdade'
-alias github='cd ~/Documents/Development/Projects/github'
-alias profite='cd ~/Documents/Development/Projects/Empresa/Profite'
-
-# mongo
-# alias mongorun='mongod --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf &'
+source ~/.bash_profile
