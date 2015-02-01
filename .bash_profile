@@ -35,6 +35,7 @@ alias projetos='cd /Users/gbrlsepulveda/Projetos'
 alias drive='cd ~/Google Drive'
 alias talks='cd ~/Google Drive/Talks'
 alias home='cd ~/'
+alias labs='cd ~/Labs'
 alias mamp='cd /Applications/MAMP/htdocs/'
 
 # mongo
