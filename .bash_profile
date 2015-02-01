@@ -5,11 +5,12 @@ alias ll='ls -l'
 alias lw='ls -l'
 alias lqq='ls -l'
 alias cl='clear'
+alias celar='clear'
+alias cla='clear && ls -la'
 alias home='cd ~'
 alias rt='reset'
 alias trash='rm -rf ~/.Trash'
 alias ..='cd ..'
-alias celar='clear'
 alias tree='ls -R | grep ":$" | sed -e "s/:$//" -e "s/[^-][^\/]*\//--/g" -e "s/^/   /" -e "s/-/|/"'
 alias rmds='rm -f .DS_Store .localized;ls -laG'
 
@@ -40,11 +41,6 @@ alias mamp='cd /Applications/MAMP/htdocs/'
 
 # mongo
 alias mongorun='mongod --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf &'
-
-# python
-alias pyclean='find . -name "*.pyc" -exec rm {} \;'
-alias pydist='python setup.py sdist upload -r ipypi'
-alias pydev='python setup.py develop --no-deps'
 
 # processes
 alias tm='top -o vsize' # memory

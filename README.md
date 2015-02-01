@@ -58,3 +58,7 @@ $ git short ~ git shortlog -s -n
 => jekyll ✔
 => mongodb ✔
 ```
+
+### Thanks to…
+
+[Davidson Fellipe](davidsonfellipe) and his [dotfiles](https://github.com/davidsonfellipe/dotfiles)
