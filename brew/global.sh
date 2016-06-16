@@ -26,3 +26,13 @@ else
     brew install mongodb --with-openssl
     msg_ok "OK"
 fi
+
+
+# python
+if which mongod &> /dev/null; then
+    msg_checking "python"
+else
+    msg_install "python" "brew install python"
+    brew install python
+    msg_ok "OK"
+fi
