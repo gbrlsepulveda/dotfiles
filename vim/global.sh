@@ -20,3 +20,17 @@ if [[ $OSX && `which vim 2> /dev/null` ]]; then
         msg_alert "We had a problem while updating vim's plugins.";
     fi
 fi
+
+
+# powerline fonts
+if [[ -d "$HOME/.vim/fonts" ]]; then
+    msg_checking "Checking vim fonts directory"
+else
+    msg_install "Cloning" "https://github.com/powerline/fonts.git"
+    git clone https://github.com/powerline/fonts.git $HOME/.vim/
+    sh $HOME/.vim/fonts/install.sh
+    ok "OK"
+fi
+
+# powerline
+pip install git+git://github.com/powerline/powerline

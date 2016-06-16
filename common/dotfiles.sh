@@ -41,9 +41,18 @@ fi
 # .profile
 if [ -f ".bash_profile" ]; then
     msg_installing ".bash_profile"
-    sudo ln -s /Users/gbrlsepulveda/Labs/dotfiles/.bash_profile ~/.bash_profile
+    sudo ln -s /Users/gbrlsepulveda/Labs/dotfiles/bash/.bash_profile ~/.bash_profile
     source ~/.bash_profile
     msg_alert "For use on this session, type: source ~/.bash_profile"
+fi
+
+
+# .aliases
+if [ -f ".bash_aliases" ]; then
+    msg_installing ".bash_aliases"
+    sudo ln -s /Users/gbrlsepulveda/Labs/dotfiles/bash/.bash_aliases ~/.bash_aliases
+    source ~/.bash_aliases
+    msg_alert "For use on this session, type: source ~/.bash_aliases"
 fi
 
 # .profile
@@ -66,13 +75,6 @@ if [ -f ".vimrc" ]; then
     # sudo ln -s /Users/gbrlsepulveda/Labs/dotfiles/vim/.vimrc ~/.vimrc
     git clone git://github.com/amix/vimrc.git ~/.vim_runtime
     sh ~/.vim_runtime/install_awesome_vimrc.sh
-fi
-
-# dracula theme
-if [ -f "dracula-theme" ]; then
-    msg_installing "dracula-theme"
-    # sudo ln -s /Users/gbrlsepulveda/Labs/dotfiles/vim/.vimrc ~/.vimrc
-    git clone git://github.com/zenorocha/dracula-theme.git /Users/gbrlsepulveda/Labs/dotfiles/common/dracula
 fi
 
 # this file prevents the shell login message
