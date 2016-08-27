@@ -72,7 +72,6 @@ Plugin 'airblade/vim-gitgutter'
 let g:gitgutter_max_signs = 500  " default value
 
 Plugin 'mattn/emmet-vim'
-Plugin 'wakatime/vim-wakatime'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'eslint/eslint'
