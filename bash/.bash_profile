@@ -2,8 +2,7 @@
 source ~/.bash_aliases
 
 # sublime editor
-export EDITOR="/usr/local/bin/subl"
-export EDITOR='subl -w'
+export EDITOR="/usr/local/bin/code"
 
 # paths > general
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"

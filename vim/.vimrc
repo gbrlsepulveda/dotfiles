@@ -65,7 +65,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
 Plugin 'kien/ctrlp.vim'
-let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|.git'
 
 
 Plugin 'airblade/vim-gitgutter'
