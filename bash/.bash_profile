@@ -1,8 +1,7 @@
 # aliases
 source ~/.bash_aliases
 
-# sublime editor
-export EDITOR="/usr/local/bin/code"
+export EDITOR="/usr/bin/vim"
 
 # paths > general
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
