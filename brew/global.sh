@@ -9,30 +9,12 @@ else
     ok "OK"
 fi
 
-# phantomjs
-if which phantomjs &> /dev/null; then
-    msg_checking "phantomjs"
+# htop
+if which htop &> /dev/null; then
+    msg_checking "htop"
 else
-    msg_install "phantomjs" "brew install phantomjs"
-    brew install phantomjs
+    msg_install "htop" "brew install htop"
+    brew install htop
     msg_ok "OK"
 fi
 
-# mongo
-if which mongod &> /dev/null; then
-    msg_checking "mongodb"
-else
-    msg_install "mongodb" "brew install mongodb"
-    brew install mongodb --with-openssl
-    msg_ok "OK"
-fi
-
-
-# python
-if which mongod &> /dev/null; then
-    msg_checking "python"
-else
-    msg_install "python" "brew install python"
-    brew install python
-    msg_ok "OK"
-fi
