@@ -33,15 +33,13 @@
     dfs = diff --stat
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     ck = checkout
+    fa = fetch --all
     fu = fetch upstream
-    tree = log --graph --pretty=oneline --decorate
-    plm = pull origin master
-    psm = push origin master
     ps = push
     pst = push --tags
     pl = pull
     plr = pull --rebase
-    pp = !"echo 'Pull'; git pull; echo 'Push'; git push"
+    pp = !"echo 'Pull'; git pull --rebase; echo 'Push'; git push"
     amend = commit --amend -C HEAD
     ll   = log --pretty=oneline --decorate --abbrev-commit --max-count=15
     lll  = git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
