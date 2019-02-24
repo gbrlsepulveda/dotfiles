@@ -1,16 +1,11 @@
 # general
 alias vi='vim'
-alias ls='ls -G'
 alias la='ls -la'
 alias ll='ls -l'
-alias lw='ls -l'
-alias lqq='ls -l'
 alias cl='clear'
-alias celar='clear'
 alias cla='clear && ls -lha'
 alias wow='git st'
 alias home='cd ~'
-alias rt='reset'
 alias trash='rm -rf ~/.Trash'
 alias ..='cd ..'
 alias ...='cd .. && cd ..'
@@ -40,12 +35,3 @@ alias portifa='cd /Users/gbrlsepulveda/Labs/github/gbrlsepulveda.github.io'
 alias projetos='cd /Users/gbrlsepulveda/Projetos'
 alias home='cd ~/'
 alias labs='cd ~/Labs'
-alias mamp='cd /Applications/MAMP/htdocs/'
-
-# mongo
-alias mongorun='mongod --config /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf &'
-
-# processes
-alias tm='top -o vsize' # memory
-alias tu='top -o cpu' # cpu
-
