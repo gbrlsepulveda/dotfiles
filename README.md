@@ -24,7 +24,6 @@ $ git df ~ diff
 $ git lg ~ git log -pgit ps
 $ git co ~ git checkout
 $ git tree ~ git log --graph --pretty=oneline --decorate
-$ git pom ~ git push origin master
 $ git ps ~ git push
 $ git pl ~ git pull
 $ git pp ~ git !"echo 'Pull'; git pull; echo 'Push'; git push"
@@ -43,20 +42,12 @@ $ git short ~ git shortlog -s -n
 .gitignore_global ✔
 ```
 
-## Gems e etc...
+## Etc...
 
 ```
 => homebrew ✔
 => node ✔
 => npm ✔
-=> jshint ✔
-=> csslint ✔
-=> phantomjs ✔
-=> gem ✔
-=> capistrano ✔
-=> compass ✔
-=> jekyll ✔
-=> mongodb ✔
 ```
 
 ### Thanks to…
