@@ -1,6 +1,3 @@
-# aliases
-source ~/.bash_aliases
-
 export EDITOR="/usr/bin/vim"
 
 export NVM_DIR="/Users/gbrlsepulveda/.nvm"
