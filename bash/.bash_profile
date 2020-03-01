@@ -13,7 +13,7 @@ export CPPFLAGS=-Qunused-arguments
 # paths > general
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:${PATH}"
 export PATH="/usr/local/share/npm/bin:${PATH}"
-export PATH="$HOME/flutter/bin:${PATH}"
+export PATH="$HOME/labs/flutter/bin:${PATH}"
 
 # ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
 export PATH="/usr/local/mysql/bin:${PATH}"
@@ -30,6 +30,7 @@ export PATH="/Users/gbrlsepulveda/Library/Android/sdk/platform-tools:${PATH}"
 
 # SDK Tools
 export PATH="/Users/gbrlsepulveda/Library/Android/sdk/tools:${PATH}"
+export PATH="/Users/gbrlsepulveda/Library/Android/sdk/tools/bin:${PATH}"
 
 # Apache ant
 export PATH="/usr/local/Cellar/apache-ant-1.9.4/bin:${PATH}"

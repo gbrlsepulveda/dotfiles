@@ -1,5 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export TERM="xterm-256color"
+
+source ~/Labs/dotfiles/.powerlevel-config
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -11,7 +14,6 @@ DEFAULT_USER=$USER
 
 # Powerline —————————
 POWERLEVEL9k_SHORTEN_DIR_LENGTH=1
-export TERM="xterm-256color"
 POWERLINE_GIT_CLEAN="✔"
 POWERLINE_GIT_DIRTY="✘"
 POWERLINE_GIT_ADDED="%F{green}✚%F{black}"
@@ -39,3 +41,13 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 source ~/.bash_profile
 source ~/.bash_aliases
+
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+    if [[ -f .nvmrc && -r .nvmrc ]]; then
+        nvm use
+    fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
