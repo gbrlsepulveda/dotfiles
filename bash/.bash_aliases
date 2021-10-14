@@ -30,19 +30,6 @@ alias iplocal='ipconfig getifaddr en1'
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias netlisteners='lsof -i -P | grep LISTEN'
 
-# folders
-alias home='cd ~/'
-alias labs='cd ~/Labs/'
-alias drive='cd ~/Google\ Drive'
-alias talks='cd ~/Google\ Drive/talks'
-alias dotfiles='cd ~/Labs/dotfiles'
-alias portifa='cd ~/Labs/github/gbrlsepulveda.github.io'
-
-# others dirs
-alias projetos='cd ~/Projetos'
-alias home='cd ~/'
-alias labs='cd ~/Labs'
-
 # Docker
 alias docker:rmi="docker rmi $(docker images -a -q)"
 alias docker:rm="docker rm $(docker ps -a -q)"
