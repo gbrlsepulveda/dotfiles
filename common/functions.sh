@@ -11,6 +11,7 @@
 #  36  # Cyan    #
 #  37  # White   #
 ##################
+
 function print { echo  "\033[1;32m=> $1\033[0m"; }
 function msg_checking { echo  "\033[1;32m=> $1 ✔\033[0m"; }
 function msg_installing { echo  "\033[1;33m==> $1 [updating] ✔\033[0m"; }
