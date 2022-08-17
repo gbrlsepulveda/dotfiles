@@ -1,6 +1,6 @@
 export EDITOR="/usr/bin/vim"
 
-export NVM_DIR="/Users/gbrlsepulveda/.nvm"
+export NVM_DIR="/Users/gabrielsepulveda/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Bin

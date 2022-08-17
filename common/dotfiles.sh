@@ -1,4 +1,4 @@
-source common/functions.sh
+source /opt/projects/dotfiles/common/functions.sh
 
 # .ssh/config
 if [ -f "ssh/config" ]; then
