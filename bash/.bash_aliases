@@ -11,7 +11,7 @@ alias ....='cd .. && cd .. && cd ..'
 alias .....='cd .. && cd .. && cd .. && cd ..'
 alias tree='ls -R | grep ":$" | sed -e "s/:$//" -e "s/[^-][^\/]*\//--/g" -e "s/^/   /" -e "s/-/|/"'
 alias rmds='rm -f .DS_Store .localized;ls -laG'
-alias reload='source ~/.bash_profile'
+alias home='cd ~'
 
 # Tools
 alias y='yarn'
