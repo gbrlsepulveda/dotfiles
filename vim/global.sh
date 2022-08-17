@@ -1,11 +1,11 @@
 source common/functions.sh
 
-# clone the neobundle plugin, to manage vim plugins
-if [ ! -d "$HOME/.vim/bundle/neobundle.vim/.git" ]; then
-    msg_installing "Installing neobundle..."
-    git clone git@github.com:Shougo/neobundle.vim.git $HOME/.vim/bundle/neobundle.vim
+# clone the Vundle plugin, to manage vim plugins
+if [ ! -d "$HOME/.vim/bundle/Vundle.vim/.git" ]; then
+    msg_installing "Installing vundle..."
+    git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 else
-    msg_ok "neobundle is already installed."
+    msg_ok "Vundle is already installed."
 fi
 
 # vim's plugins
